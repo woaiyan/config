@@ -12,6 +12,8 @@ const List = (state = [], action) => {
       return state.map(item =>
         (item.id !== acion.id
       )
+    case 'FILTER':
+      return action.filter
     default:
       return state
   }
