@@ -3,7 +3,7 @@ export const add = name => {
   return {
     type: 'ADD',
     id: nextTodoId++,
-    name
+    name:name
   }
 }
 
@@ -13,15 +13,9 @@ export const filter = filter => {
     filter
   }
 }
-
-export const toggle = id => {
-  return {
-    type: 'TOGGLE',
-    id
-  }
   
-  export const delete = id => {
-  return {
+ export const delete = id => {
+   return {
     type: 'DELETE',
     id
   }
